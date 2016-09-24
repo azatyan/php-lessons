@@ -1,0 +1,24 @@
+{
+    "name": "martin/php-lessons",
+    "description": "PHP 7.0 Lessons",
+    "authors": [
+        {
+            "name": "Tigran Azatyan",
+            "email": "tigran@azatyan.info"
+        },
+        {
+            "name": "add",
+            "email": "your@email.info"
+        }
+    ],
+
+    "autoload": {
+        "psr-4": {
+            "": "src/"
+        }
+    },
+
+    "require": {
+        "symfony/finder": "^3.1"
+    }
+}
