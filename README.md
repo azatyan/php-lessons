@@ -1,4 +1,4 @@
-# php-lessons
+# PHP7 Lessons
 PHP 7.0
 
 ## Lessons
