@@ -23,6 +23,22 @@ class Man
      */
     private $birthDate;
 
+    /**
+     * @var int
+     */
+    public static $handsCount = 2;
+
+    /**
+     * @var int
+     */
+    public static $heartCount = 1;
+
+    /**
+     * @var
+     */
+    protected $accessToPhone;
+
+
 
     /**
      * Man constructor.
@@ -58,4 +74,23 @@ class Man
         
         return $fullName;
     }
+
+
+    /*
+     * Get the Man's Full Name
+     * @return string
+     *
+     */
+    public function getProfile(){
+
+        return [
+            'firstName' => $this->firstName,
+            'lastName' => $this->lastName,
+            'birthDate' => $this->birthDate,
+            'handsCount' => self::$handsCount,
+            'heartCount' => self::$heartCount,
+            'accessToPhone' => $this->accessToPhone
+        ];
+    }
 }
+
